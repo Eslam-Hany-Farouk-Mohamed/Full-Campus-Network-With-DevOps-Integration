@@ -161,7 +161,7 @@ const isFavorite = computed(() =>
   listingsStore.favorites.some(f => f.id === listing.value?.id)
 )
 
-const getImageUrl = (path) => `http://localhost:8000/storage/${path}`
+const getImageUrl = (path) => `http://backend-service:8000/storage/${path}`
 const setMainImage = (path) => { currentImage.value = path }
 
 const formatPrice = (price) => {

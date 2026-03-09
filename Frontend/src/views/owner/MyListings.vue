@@ -84,7 +84,7 @@ const myListings = computed(() => listingsStore.myListings)
 
 const getImage = (listing) => {
   if (listing.images?.length > 0) {
-    return `http://localhost:8000/storage/${listing.images[0].path}`
+    return `http://backend-service:8000/storage/${listing.images[0].path}`
   }
   return 'https://via.placeholder.com/80x60?text=No+Image'
 }

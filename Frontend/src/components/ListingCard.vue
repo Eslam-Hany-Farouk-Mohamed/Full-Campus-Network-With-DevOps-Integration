@@ -84,7 +84,7 @@ const localizedRegion = computed(() =>
 const imageUrl = computed(() => {
   if (props.listing.images?.length > 0) {
     const primaryImage = props.listing.images.find(img => img.is_primary) || props.listing.images[0]
-    return `http://localhost:8000/storage/${primaryImage.path}`
+    return `http://backend-service:8000/storage/${primaryImage.path}`
   }
   return 'https://via.placeholder.com/400x250?text=No+Image'
 })
